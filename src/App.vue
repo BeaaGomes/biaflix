@@ -1,28 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <Home v-if="state == 0" v-on:category-selected="onCategorySelected"/>
+      <Loading v-if="state == 1" v-on:movie-found="onMovieFound" v-bind:category="category"/>
+      <ResultMovie v-if="state == 2" v-on:restart="state=0" v-bind:movie="movie"/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
+import Loading from './components/Loading.vue'
+import ResultMovie from './components/ResultMovie.vue'
 
 export default {
-  name: 'App',
+  name: 'App', 
   components: {
-    HelloWorld
-  }
+    Home,
+    Loading,
+    ResultMovie
+  },
+  data() {
+    return {
+      category: null,
+      movie: {},
+      state: 0
+    }
+  },
+  methods: {
+    onCategorySelected: function (category){
+      this.category = category
+      this.state = 1
+      
+    },
+    onMovieFound: function (movie){
+      this.movie = movie
+      this.state = 2
+      
+    }
+  },
 }
 </script>
-
 <style>
+body {
+  background: #141414 !important;
+  
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
 }
 </style>
+
