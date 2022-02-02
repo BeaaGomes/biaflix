@@ -47,7 +47,7 @@ export default {
 }
 
 .img {
-  width:70%
+  width:50%
   
 }
 

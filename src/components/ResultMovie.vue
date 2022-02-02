@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row my-5" > 
+    <div class="row my-3" > 
       <div class="col" align="center">
        
       </div>
