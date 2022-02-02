@@ -39,6 +39,7 @@ export default {
         this.$emit('movie-found', result)
       } 
     })
+    
   }
 
 }

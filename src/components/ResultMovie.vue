@@ -26,7 +26,7 @@
         <h2>{{movie.title}}</h2>
         <div class="mt-4">
           <label>Data de lançamento: </label> 
-          <span class="ml-1">{{movie.release_date}}</span>
+          <span class="ml-1">{{dateTranslator(movie.release_date)}}</span>
         </div>
         <div class="mt-2">
           <label>Título original: </label> 
@@ -41,6 +41,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'ResultMovie',
   props: ['movie'],
@@ -52,9 +53,18 @@ export default {
   methods: {
     restart: function (){
       this.$emit('restart')
+    },
+    dateTranslator: function (date){
+      const myArray = date.split("-")
+      let ano = myArray[0]
+      let mes = myArray[1]
+      let dia = myArray[2]
+      let newDate = dia + "/" + mes + "/" + ano
+      return newDate
     }
   }
 }
+
 </script>
 
 
