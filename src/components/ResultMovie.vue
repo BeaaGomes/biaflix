@@ -9,7 +9,7 @@
       <div class="col" >
         <div class="row">
           <div class="col" align="center">
-            <img class="w-80" v-bind:src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"/>
+            <img v-bind:src="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"/>
           </div>
         </div>
         <div class="row">
@@ -78,7 +78,9 @@ h1 {
   font-size: 40px
 }
 img {
-  border-radius: 15px
+  border-radius: 15px;
+  width: 80%;
+   
 }
 label {
   font-weight: bold;

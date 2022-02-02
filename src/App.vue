@@ -20,6 +20,9 @@ export default {
     Loading,
     ResultMovie
   },
+  metaInfo: {
+      title: 'Biaflix'
+  },
   data() {
     return {
       category: null,
