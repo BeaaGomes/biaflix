@@ -11,7 +11,7 @@
       </div>
       <div class="col fade-in-slow" align="left">
         <b-form-select v-model="selected_category" :options="categories" class="form-select mt-3"></b-form-select>
-        <b-button variant="danger" class="mt-3 ml-2" v-on:click="submitCategory">OK</b-button>
+        <b-button variant="danger" class="mt-3 ml-2" v-on:click="submitCategory"><b-icon-search></b-icon-search></b-button>
       </div>
     </div>
     
