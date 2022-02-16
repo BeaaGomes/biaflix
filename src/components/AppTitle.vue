@@ -5,12 +5,10 @@
 </template>
 
 <script>
-
 export default {
   name: 'AppTitle',
 }
 </script>
-
 
 <style scoped>
 .fade-in-image {
@@ -48,7 +46,5 @@ export default {
 
 .img {
   width:50%
-  
 }
-
 </style>

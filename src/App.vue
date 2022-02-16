@@ -33,23 +33,20 @@ export default {
   methods: {
     onCategorySelected: function (category){
       this.category = category
-      this.state = 1
-      
+      this.state = 1   
     },
     onMovieFound: function (movie){
       this.movie = movie
       this.state = 2
-      
     }
   },
 }
 </script>
+
 <style>
 body {
   background: #141414 !important;
-  
 }
-
 #app {
   color: white;
 }

@@ -5,16 +5,15 @@
         <app-title/>
       </div>
     </div>
-    <div class="row" style="margin-top: 100px;"> 
-      <div class="col fade-in" align="right">
-        <label class="form-input">Escolha a categoria:</label>
-      </div>
-      <div class="col fade-in-slow" align="left">
-        <b-form-select v-model="selected_category" :options="categories" class="form-select mt-3"></b-form-select>
-        <b-button variant="danger" class="mt-3 ml-2" v-on:click="submitCategory"><b-icon-search></b-icon-search></b-button>
-      </div>
-    </div>
-    
+      <div class="row" style="margin-top: 100px;"> 
+        <div class="col fade-in" align="right">
+          <label class="form-input">Escolha a categoria:</label>
+        </div>
+        <div class="col fade-in-slow" align="left">
+          <b-form-select v-model="selected_category" :options="categories" class="form-select mt-3"></b-form-select>
+          <b-button variant="danger" class="mt-3 ml-2" v-on:click="submitCategory"><b-icon-search></b-icon-search></b-button>
+        </div>
+    </div>    
   </div>
 </template>
 
@@ -56,7 +55,7 @@ export default {
 
 <style scoped>
 .form-input{
-  font-size: 40px;
+  font-size: 5.5vmin;
 }
 .form-select{
   width: 50%;
