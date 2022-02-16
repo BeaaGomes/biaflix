@@ -1,7 +1,7 @@
 
 
 ## :eye_speech_bubble: Visão Geral
-Biaflix é uma aplicação web que sugere um filme baseado na categoria escolhida pelo usuário. Feita com muito carinho para aprofundar meus conhecimentos com as tecnologias indicadas e requisições à API's.
+Biaflix é uma aplicação web responsiva que sugere um filme baseado na categoria escolhida pelo usuário. Feita com muito carinho para aprofundar meus conhecimentos com as tecnologias indicadas e requisições à API's.
 
 
 ## :books: Seções
